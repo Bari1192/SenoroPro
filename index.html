@@ -17,7 +17,6 @@
     <style>
         /* mobil nézeten a dropdown-item -ek kis ikonként, 
             ne teljes képernyben jelenjenek meg a menülehetpségek */
-        /* elso commentemn, szia! */
     </style>
 
 </head>
@@ -74,24 +73,23 @@
                                 <a class="nav-link" href="#">Prémium márkaszervíz</a>
                             </li>
 
+
+                    </div>
+
+
+
+                    <!-- A Senovo menü nem jelenik meg XS-SM méretnél (d-none d-md-block ez a kódja. Jelentése: Display none (megjelenés nincs MD és felette),)-->
+                    <div class="dropdown d-none d-md-block">
+                        <a class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Kapcsolat</a>
+                        <ul class="dropdown-menu bg-primary text-white">
+                            <li><a class="dropdown-item" href="#">Elérhetőség</a></li>
+                            <li><a class="dropdown-item" href="#">Garanciális szolgáltatások</a></li>
+                            <li><a class="dropdown-item" href="#">Márkaszervíz</a></li>
                         </ul>
                     </div>
-                </div>
-
-
-
-                <!-- A Senovo menü nem jelenik meg XS-SM méretnél (d-none d-md-block ez a kódja. Jelentése: Display none (megjelenés nincs MD és felette),)-->
-                <div class="dropdown d-none d-md-block">
-                    <a class="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Kapcsolat</a>
-                    <ul class="dropdown-menu bg-primary text-white">
-                        <li><a class="dropdown-item" href="#">Elérhetőség</a></li>
-                        <li><a class="dropdown-item" href="#">Garanciális szolgáltatások</a></li>
-                        <li><a class="dropdown-item" href="#">Márkaszervíz</a></li>
                     </ul>
                 </div>
-                </ul>
-            </div>
             </div>
 
 
