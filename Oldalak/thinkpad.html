@@ -11,9 +11,9 @@
 </head>
 
 <body class="bg-dark TP-body">
-  <nav class="navbar navbar-expand-md bg-body-tertiary">
+  <nav class="navbar navbar-expand-md sticky-top"> <!--bg-body-tertiary -->
     <div class="container-fluid">
-      <a class="navbar-brand p-1 fw-bold" href="#">Senoro</a>
+      <a class="navbar-brand p-1 fw-bold" href="../index.html">Senoro</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Főoldal</a>
+            <a class="nav-link" href="../index.html">Főoldal</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">IdeaPad</a>
@@ -30,13 +30,13 @@
             <a class="nav-link" href="#">Számítógépek</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">ThinkPad</a>
+            <a class="nav-link active" aria-current="page" href="thinkpad.html">ThinkPad</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container bg-white p-3 my-1">
+  <div class="container bg-white p-3 mb-1">
     <div class="row">
       <div class="col-12">
         <h1>ThinkPad, hordozható számítógépek.</h1>
@@ -46,108 +46,148 @@
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <!-- <img src="kepek/place0.png" class="d-block w-100 img-thumbnail" alt="kep1"> -->
-          <video class="ratio ratio-4x3" muted autoplay src="https://p3-ofp.static.pub/ShareResource/thinkpad/Videos/lenovo-laptop-thinkpad-series-feature-1-360-hinge-video-v2.mp4"></video>
+          <video class="ratio ratio-4x3" muted loop autoplay
+            src="https://p3-ofp.static.pub/ShareResource/thinkpad/Videos/lenovo-laptop-thinkpad-series-feature-1-360-hinge-video-v2.mp4"></video>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-          <img style="max-height: 526px; width: auto;" src="https://p2-ofp.static.pub/ShareResource/na/subseries/featured-images/lenovo-thinkpad-t14-gen-3.jpg" class="d-block w-100 img-fluid ratio ratio-4x3" alt="kep2">
+          <img class="d-block img-fluid ratio ratio-4x3"
+            src="https://p2-ofp.static.pub/ShareResource/na/subseries/featured-images/lenovo-thinkpad-t14-gen-3.jpg"
+            alt="kep2">
           <!-- <video class="ratio ratio-4x3" muted autoplay src=""></video> -->
         </div>
         <div class="carousel-item">
           <!-- <img src="kepek/place0.png" class="d-block w-100 img-fluid ratio ratio-4x3" alt="kep3"> -->
-          <video class="ratio ratio-4x3" muted autoplay src="https://p4-ofp.static.pub/ShareResource/thinkpad/Videos/lenovo-laptop-thinkpad-series-feature-2-mil-spec-video-v2.mp4"></video>
-        </div> 
+          <video class="ratio ratio-4x3" loop muted autoplay
+            src="https://static.lenovo.com/ww/campaigns/2020/think-brand/lenovo-laptop-thinkpad-series-feature-3-foldable-video-v2.mp4"></video>
+        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>  
+    </div>
     <div class="row">
     </div>
     <div class="row">
       <div class="col-sm-6 col-md-4 border-dark">
         <p class="text-center font-monospace m-0">ThinkPad T61</p>
-        <img class="TPkep border-dark img-thumbnail border rounded b-1" src="../Kepek/place0.png" alt="T61" title="T61"
-          data-bs-toggle="tooltip" data-bs-placement="top">
-        <a class="m-1 mx-auto d-block btn btn-primary TP-btn-primary" title="X - 12.5 inch" data-bs-placement="top" type="button"
-          data-bs-toggle="offcanvas" data-bs-target="#TP61" aria-controls="TP61">Részletek</a>
+        <div class="card card-flip" title="T61" data-bs-toggle="tooltip" data-bs-placement="top">
+          <div class="card-front">
+            <div class="card-body">
+              <img class="img-fluid rounded" src="../Kepek/place0.png" alt="T61">
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-body">
+              <h2 class="card-title">ThinkPad T61</h2>
+              <p class="card-text">A ThinkPad T61 notebook 2007. maájusában jelent meg a Lenovo kínálatában. A T61
+                UltraBay-jel és ThinkLigth-tal felszerelt, 4:3 és 16:10 képarányú modellek közül lehet választani.</p>
+            </div>
+          </div>
+        </div>
+        <a class="m-1 mx-auto d-block btn btn-primary TP-btn-primary" title="X - 12.5 inch" data-bs-placement="top"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#TP61" aria-controls="TP61">Részletek</a>
       </div>
       <div class="col-sm-6 col-md-4 border-dark">
         <p class="text-center font-monospace m-0">ThinkPad X260</p>
-        <img class="TPkep border-dark img-thumbnail border rounded b-1" src="../Kepek/place0.png" alt="X260" title="X260"
-          data-bs-toggle="tooltip" data-bs-placement="top">
-        <a class="m-1 mx-auto d-block btn btn-primary TP-btn-primary" title="T - 15.4 inch" data-bs-placement="top" type="button"
-          data-bs-toggle="offcanvas" data-bs-target="#TP260" aria-controls="TP260">Részletek</a>
+        <div class="card card-flip" title="X260" data-bs-toggle="tooltip" data-bs-placement="top">
+          <div class="card-front">
+            <div class="card-body">
+              <img class="img-fluid rounded" src="../Kepek/place0.png" alt="X260">
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-body">
+              <h2 class="card-title">ThinkPad X260</h2>
+              <div class="card-text">Kevesebb, mint 1,3 kg-os súlya mellé 20,3 mm-es vastagság párosul a legvastagabb pontján, így az X260 könnyen hordozható — a nélkül, hogy áldozatot követelne a portok, a csatlakoztathatóság vagy a tartósság oltárán.</div>  
+            </div>
+           </div>
+        </div>
+        <a class="m-1 mx-auto d-block btn btn-primary TP-btn-primary" title="T - 15.4 inch" data-bs-placement="top"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#TP260" aria-controls="TP260">Részletek</a>
       </div>
       <div class="col-sm-6 col-md-4 border-dark">
         <p class="text-center font-monospace m-0">ThinkPad X230</p>
-        <img class="TPkep border-dark img-thumbnail border rounded b-1" src="../Kepek/place0.png" alt="X230" title="X230"
-          data-bs-toggle="tooltip" data-bs-placement="top">
-        <a class="m-1 mx-auto d-block btn btn-primary TP-btn-primary" title="T - 15.4 inch" data-bs-placement="top" type="button"
-          data-bs-toggle="offcanvas" data-bs-target="#TP230" aria-controls="TP230">Részletek</a>
+        <div class="card card-flip" title="X230" data-bs-toggle="tooltip" data-bs-placement="top">
+          <div class="card-front">
+            <div class="card-body">
+              <img class="img-fluid rounded" src="../Kepek/place0.png" alt="X230">
+            </div>
+          </div>
+          <div class="card-back">
+            <div class="card-body">
+              <h2 class="card-title">ThinkPad X230</h2>
+              <p class="card-text">A ThinkPad X230 12,5 hüvelykes IPS-kijelzővel ellátott üzleti laptop. Választható 3g modemmel.</p>
+            </div>
+          </div>
+        </div>
+        <a class="m-1 mx-auto d-block btn btn-primary TP-btn-primary" title="T - 15.4 inch" data-bs-placement="top"
+          type="button" data-bs-toggle="offcanvas" data-bs-target="#TP230" aria-controls="TP230">Részletek</a>
       </div>
-  </div>
-  <!--T61 oldalsó menű-->
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="TP61" aria-labelledby="TP61Label">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title" id="TP61Label">ThinkPad T61</h1>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="offcanvas-body">
-      <ul>
-        <li>CPU: Intel<sup>&copy;</sup> Core<sup>&trade;</sup>2 Duo Processor T8100</li>
-        <li>GPU: Intel<sup>&copy;</sup> Integrált grafika</li>
-        <li>RAM: 4 GB DDR2</li>
-        <li>DISK: SATA-II (1.5 Gbit/s)</li>
-        <li>WIFI: 2.4 GHz és 5.0 GHz</li>
-        <li>KEYBOARD: 7 soros</li>
-      </ul>
+    <!--T61 oldalsó menű-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="TP61" aria-labelledby="TP61Label">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title" id="TP61Label">ThinkPad T61</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>CPU: Intel<sup>&copy;</sup> Core<sup>&trade;</sup>2 Duo Processor T8100</li>
+          <li>GPU: Intel<sup>&copy;</sup> Integrált grafika</li>
+          <li>RAM: 4 GB DDR2</li>
+          <li>DISK: SATA-II (1.5 Gbit/s)</li>
+          <li>WIFI: 2.4 GHz és 5.0 GHz</li>
+          <li>KEYBOARD: 7 soros</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!--X260 oldalsó menü-->
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="TP260" aria-labelledby="TP260Label">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title" id="TP260Label">ThinkPad X260</h1>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <!--X260 oldalsó menü-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="TP260" aria-labelledby="TP260Label">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title" id="TP260Label">ThinkPad X260</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>CPU: Intel<sup>&copy;</sup> Core<sup>&trade;</sup>i5-6300U</li>
+          <li>GPU: Intel<sup>&copy;</sup> Integrált grafika</li>
+          <li>RAM: 8 GB DDR4</li>
+          <li>DISK: SATA-III (5400/7200 fordulatszám)</li>
+          <li>WIFI: 802.11 a/c</li>
+          <li>KEYBOARD: 7 soros</li>
+        </ul>
+      </div>
     </div>
-    <div class="offcanvas-body">
-      <ul>
-        <li>CPU: Intel<sup>&copy;</sup> Core<sup>&trade;</sup>i5-6300U</li>
-        <li>GPU: Intel<sup>&copy;</sup> Integrált grafika</li>
-        <li>RAM: 8 GB DDR4</li>
-        <li>DISK: SATA-III (5400/7200 fordulatszám)</li>
-        <li>WIFI: 802.11 a/c</li>
-        <li>KEYBOARD: 7 soros</li>
-      </ul>
+    <!--X230 oldalsó menű-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="TP230" aria-labelledby="TP230Label">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title" id="TP230Label">ThinkPad X230</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <li>CPU: Intel<sup>&copy;</sup> Core<sup>&trade;</sup>i5-3320M</li>
+          <li>GPU: Intel<sup>&copy;</sup> Graphics Media Accelerator X3100</li>
+          <li>RAM: 4 GB DDR3</li>
+          <li>DISK: SATA-III (5400/7200 fordulatszám)</li>
+          <li>WIFI: 802.11 b\g\n</li>
+          <li>KEYBOARD: 5 soros</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <!--X230 oldalsó menű-->
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="TP230" aria-labelledby="TP230Label">
-    <div class="offcanvas-header">
-      <h1 class="offcanvas-title" id="TP230Label">ThinkPad X230</h1>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul>
-        <li>CPU: Intel<sup>&copy;</sup> Core<sup>&trade;</sup>i5-3320M</li>
-        <li>GPU: Intel<sup>&copy;</sup> Graphics Media Accelerator X3100</li>
-        <li>RAM: 4 GB DDR3</li>
-        <li>DISK: SATA-III (5400/7200 fordulatszám)</li>
-        <li>WIFI: 802.11 b\g\n</li>
-        <li>KEYBOARD: 5 soros</li>
-      </ul>
-    </div>
-  </div>
-  <!--END-->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
+    <!--END-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>
