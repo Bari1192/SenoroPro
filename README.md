@@ -125,7 +125,14 @@ Félig vagyok kész (elkezdtem, de még nincs kész / módosítani / igazítani 
 Készen vagyok vele lista:
 
 - Bootstrap, java integrálás kódban, css-ben.
-- 
+
+
+TELJES ÁTALAKÍTÁS A FŐMENÜBEN:
+- színek módosítása (kék, piros, lilás-rózsaszín, fekete)
+- Főoldal offcanvas + navbar (jquery + alap bootstrap mind2)
+- Csempe elhelyezés módosítása
+- Főoldal main része átalakítva (top termékek közép, rendelési infók alulra, footer alap behelyezése)
+- Részenként lesz pusholva.
 
 
 
