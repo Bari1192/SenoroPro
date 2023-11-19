@@ -1,10 +1,7 @@
-:root {
-    --main-color: rgb(255 0 0);
-}
 
-main {
-    width: 100%
-}
+/*<!-- Márk része --> */
+
+
 
 @media screen and (min-width: 576px) and (max-width: 1200px) {}
 
