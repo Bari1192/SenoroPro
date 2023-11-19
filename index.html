@@ -59,95 +59,243 @@
     </header>
 
     <main>
-        <!-- Csempe rész -->
-        <div id="Csempe" class="container">
-            <div class="row">
-                <!-- Bal oldali oszlop: Szöveg és gomb -->
-                <div class="col-6">
-                    <h1>Itt a H1-es szöveg</h1>
-                    <h2>Itt a H2-es szöveg</h2>
-                    <a href="#" class="btn btn-primary">Link gomb</a>
-                </div>
+        <!-- Csempekeret CSS-ben -->
+        <!-- NEM responzív, belecsúszik az alsó reszponzív részekbe. -->
 
-                <!-- Jobb oldali oszlop: 4 linkes elem -->
-                <div class="col-6">
+        <!-- Bal col-oszlop a csempéknél -->
+        <div id="csempekeret" class="container">
+            <div class="row my-5">
+                <div class="col-sm-4 mb-4 mb-sm-0 col-lg-4">
+                    <h1 class="display-4 text-info mb-4">Senoro Pro</h1>
+                    <p>Lépj be velünk a mesterséges intelligencia és a futurisztikus számítógépek világába!.</p>
+                </div>
+                <!-- Jobb col-oszlop -->
+                <div id="csempek" class="col-lg-8 ms-5">
                     <div class="row">
-                        <div class="col-6 border"> <!-- border osztály a csíkhoz -->
-                            <h2>Link 1</h2>
+                        <div class="col-sm-4 mb-4 mb-sm-0 col-lg-6">
+                            <img src="./Kepek/elso/hardware.jpg" alt="Kép 1"
+                                class="img-fluid mb-4 object-fit-cover border rounded">
                         </div>
-                        <div class="col-6 border">
-                            <h2>Link 2</h2>
+                        <div class="col-sm-4 mb-4 mb-sm-0 col-lg-6">
+                            <img src="./Kepek/elso/hardware.jpg" alt="Kép 2"
+                                class="img-fluid mb-4 object-fit-cover border rounded">
                         </div>
-                        <div class="col-6 border">
-                            <h2>Link 3</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 mb-4 mb-sm-0 col-lg-6">
+                            <img src="./Kepek/elso/hardware.jpg" alt="Kép 3"
+                                class="img-fluid mb-4 object-fit-cover border rounded">
                         </div>
-                        <div class="col-6 border">
-                            <h2>Link 4</h2>
+                        <div class="col-sm-4 mb-4 mb-sm-0 col-lg-6">
+                            <img src="./Kepek/elso/hardware.jpg" alt="Kép 4"
+                                class="img-fluid mb-4 object-fit-cover border rounded">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Stílus és technológia -->
+
+        <!-- ÉRTED FEJLESZTÜNK RÉSZ  -->
+        <!-- responzív, bár picit nagy  -->
         <div class="container">
             <div class="row">
-                <!-- Képek -->
-                <div class="col-6">
-                    <img src="telefon_app.jpg" alt="Telefon app kép">
-                    <img src="vezérlőpanel.jpg" alt="Vezérlőpanel kép">
-                    <img src="tesla_ipad.jpg" alt="Tesla iPad kép">
-                </div>
-
-                <!-- Szöveg és gombok -->
-                <div class="col-6">
+                <div class="col">
+                    <h2 class="display-6 text-info mb-4">ÉRTED Fejlesztünk:</h2>
+                    <!-- felső - 1. csempe -->
                     <div class="row">
-                        <div class="col-12">
-                            Márka/App random száma
+                        <div class="col-sm-4 mb-4 mb-sm-0">
+                            <div class="card h-100">
+                                <a href="#"><img src="./Kepek/elso/hardware.jpg" class="card-img-top" alt=""></a>
+                                <div class="card-body">
+                                    <h3 class="h6 mb-3 card-title lh-base">MI vezérelt alaplapok
+                                        (PCILE.4v.9)<br>Ultrahatékony - Asztali számítógépek.</h3>
+                                    <div class="row align-items-center">
+                                        <div class="order-2 order-lg-1 col-lg-6">
+                                            <a href="#" class="btn btn-warning">Megnézem</a>
+                                        </div>
+                                        <div
+                                            class="order-1 order-lg-2 col-lg-6 fw-bold text-danger text-start text-lg-end mb-3 mb-lg-0">
+                                            475 890 Ft-tól
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6">
-                            <a href="#" class="btn btn-warning">Megnézem</a>
+                        <!-- felső - 2. csempe -->
+                        <div class="col-sm-4 mb-4 mb-sm-0">
+                            <div class="card h-100">
+                                <a href="#"><img src="./Kepek/elso/laptop.png" class="card-img-top" alt=""></a>
+                                <div class="card-body">
+                                    <h3 class="h6 mb-3 card-title lh-base">Gaming és Fejlesztői Laptopok (PCILE.5300XT)
+                                        <br>Szórakozás és erő egy kézben.
+                                    </h3>
+                                    <div class="row align-items-center">
+                                        <div class="order-2 order-lg-1 col-lg-6">
+                                            <a href="#" class="btn btn-warning">Megnézem</a>
+                                        </div>
+                                        <div
+                                            class="order-1 order-lg-2 col-lg-6 fw-bold text-danger text-start text-lg-end mb-3 mb-lg-0">
+                                            175 250 Ft-tól
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 text-end">
-                            Friss!
+                        <!-- felső - 3. csempe -->
+                        <div class="col-sm-4 mb-4 mb-sm-0">
+                            <div class="card h-100">
+                                <a href="#"><img src="./Kepek/elso/Telefon.png" class="card-img-top" alt=""></a>
+                                <div class="card-body">
+                                    <h3 class="h6 mb-3 card-title lh-base">Intelligens processzorok mobiltelefonokhoz
+                                        (Kriton TX8000)<br>Egyedi fejlesztésű processzoraink már a zsebedben
+                                    </h3>
+                                    <div class="row align-items-center">
+                                        <div class="order-2 order-lg-1 col-lg-6">
+                                            <a href="#" class="btn btn-warning">Megnézem</a>
+                                        </div>
+                                        <div
+                                            class="order-1 order-lg-2 col-lg-6 fw-bold text-danger text-start text-lg-end mb-3 mb-lg-0">
+                                            321 990 Ft
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- banner -->
+            <div class="row my-5 d-none d-sm-block">
+                <div class="col-sm-4 mb-4 mb-sm-4 col-lg-8">
+                    <a href="#"><img src="./Kepek/navbar/Logo.png" alt="SenoroPro logoja széles nézetben"
+                            class="img-fluid"></a>
+                </div>
+            </div>
+            <!-- banner vége -->
+
+            <div class="row">
+                <div class="col">
+                    <h2 class="display-6 text-info mb-4">TOP termékeink</h2>
+                    <!-- alsó - 1. csempe -->
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="card h-100">
+                                <a href="#"><img src="./Kepek/elso/laptop.png" class="card-img-top" alt=""></a>
+                                <div class="card-body">
+                                    <h3 class="h6 mb-3 card-title lh-base">LG F2DV5S7S0E<br>Praktikus és hatékony
+                                        megoldás a mindennapokban.</h3>
+                                    <div class="row align-items-center">
+                                        <div class="order-2 order-lg-1 col-lg-6">
+                                            <a href="#" class="btn btn-warning">Megnézem</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="text-decoration-none text-secondary small">MI
+                                        Torony-számítógépek-1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- alsó - 2. csempe -->
+                        <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="card h-100">
+                                <a href="#"><img src="./Kepek/elso/laptop.png" class="card-img-top" alt=""></a>
+                                <div class="card-body">
+                                    <h3 class="h6 mb-3 card-title lh-base">AXER-685 Dedica <br> Praktikus és hatékony
+                                        megoldás a mindennapokban.</h3>
+                                    <div class="row align-items-center">
+                                        <div class="order-2 order-lg-1 col-lg-6">
+                                            <a href="#" class="btn btn-warning">Megnézem</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="text-decoration-none text-secondary small">Thinkapd1</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- alsó - 3. csempe -->
+                        <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="card h-100">
+                                <a href="#"><img src="./Kepek/elso/laptop.png" class="card-img-top" alt=""></a>
+                                <div class="card-body">
+                                    <h3 class="h6 mb-3 card-title lh-base">TunerJox 510BT <br>Praktikus és hatékony
+                                        megoldás a mindennapokban.</h3>
+                                    <div class="row align-items-center">
+                                        <div class="order-2 order-lg-1 col-lg-6">
+                                            <a href="#" class="btn btn-warning">Megnézem</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="text-decoration-none text-secondary small">Thinkpad2</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- alsó - 4. csempe -->
+                        <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="card h-100">
+                                <a href="#"><img src="./Kepek/elso/laptop.png" class="card-img-top" alt=""></a>
+                                <div class="card-body">
+                                    <h3 class="h6 mb-3 card-title lh-base">Thinkpad processzoraink <br>Praktikus és
+                                        hatékony megoldás a mindennapokban.</h3>
+                                    <div class="row align-items-center">
+                                        <div class="order-2 order-lg-1 col-lg-6">
+                                            <a href="#" class="btn btn-warning">Megnézem</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="text-decoration-none text-secondary small">MX/895640</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col">
+                    <h2 class="display-6 text-info mb-4">Információk</h2>
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="bg-light rounded text-center p-3 h-100">
+                                <i class="bi bi-truck fs-1 text-info"></i>
+                                <p class="h5 mt-2 mb-4">Szállítási feltételek</p>
+                                <a href="#" class="btn btn-secondary">Elolvasom</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="bg-light rounded text-center p-3 h-100">
+                                <i class="bi bi-credit-card-2-back fs-1 text-info"></i>
+                                <p class="h5 mt-2 mb-4">Fizetési feltételek</p>
+                                <a href="#" class="btn btn-secondary">Elolvasom</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="bg-light rounded text-center p-3 h-100">
+                                <i class="bi bi-shield-check fs-1 text-info"></i>
+                                <p class="h5 mt-2 mb-4">Biztonságos vásárlás</p>
+                                <a href="#" class="btn btn-secondary">Elolvasom</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+                            <div class="bg-light rounded text-center p-3 h-100">
+                                <i class="bi bi-file-earmark-text fs-1 text-info"></i>
+                                <p class="h5 mt-2 mb-4">Vásárlási feltételek</p>
+                                <a href="#" class="btn btn-secondary">Elolvasom</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- AI jellegű kép -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <img src="ai_kép.jpg" alt="AI kép" class="img-fluid">
-                </div>
-            </div>
-        </div>
-
-        <!-- Mesterséges intelligencia -->
-        <div class="container">
-            <div class="row">
-                <!-- Az öt oszlop -->
-                <div class="col-2">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="gamer_gep.jpg" alt="Gamer gép kép" class="img-fluid">
-                        </div>
-                        <div class="col-6">
-                            Gamer gép
-                        </div>
-                        <div class="col-6">
-                            <a href="#" class="btn btn-primary">Link</a>
-                        </div>
-                        <div class="col-12 bg-dark text-white">
-                            Telefonok
-                        </div>
-                    </div>
-                </div>
-                <!-- További oszlopok a többi elemmel hasonlóként jönnének ide -->
-            </div>
-        </div>
 
 
     </main>
