@@ -43,7 +43,7 @@
         margin-bottom: auto;
         font-size: 0.9rem;
         padding: 5px 10px;
-    }    
+    }
 }
 
 main {
@@ -52,12 +52,14 @@ main {
     background-size: cover;
     background-position: center;
 }
-.akciosav{
+
+.akciosav {
     height: 35px;
     background-image: url(../Kepek/Fooldal/sale.png);
     background-repeat: repeat-x;
     background-size: contain;
 }
+
 #senoropro_alatt {
     color: white;
     font-style: italic;
@@ -78,25 +80,33 @@ main {
     background-repeat: repeat-x;
     background-image: url(../Kepek/Fooldal/kepgyujto/sale.png);
 }
-a{
+
+a {
     text-decoration: none;
 }
-.image-container1, .image-container2, .image-container3, .image-container4  {
-    cursor: pointer;  
+
+.image-container1,
+.image-container2,
+.image-container3,
+.image-container4 {
+    cursor: pointer;
 }
 
 .image-container1 img:hover {
     content: url(../Kepek/Fooldal/Csempe/laptop900x670.png);
     overflow: hidden;
 }
+
 .image-container2 img:hover {
     content: url(../Kepek/Fooldal/Csempe/kod900x670.png);
     overflow: hidden;
 }
+
 .image-container3 img:hover {
     content: url(../Kepek/Fooldal/Csempe/telefon900x670.png);
     overflow: hidden;
 }
+
 .image-container4 img:hover {
     content: url(../Kepek/Fooldal/Csempe/gpu900x670.png);
     overflow: hidden;
@@ -126,12 +136,18 @@ h3 {
 /* kártyákban a gombok */
 .btn-primary {
     background-color: rgb(255, 187, 0);
-    border-color: rgb(255, 187, 0);
+    border-color: rgb(255, 204, 63);
     color: black;
     align-items: start;
 }
 
 .btn-primary:hover {
+    background-color: rgb(255, 204, 63);
+    border-color: rgb(255, 204, 63);
+    color: black
+}
+
+.btn-primary:active {
     background-color: rgb(255, 204, 63);
     border-color: rgb(255, 204, 63);
     color: black
@@ -213,6 +229,7 @@ hr {
     width: 100%;
     background-color: #7c4dff;
     height: 2px;
+    display: inline-block;
 }
 
 .kopirajt {
@@ -229,11 +246,11 @@ hr {
 
 /*Abel része*/
 
-#termekek-iparnak{
+#termekek-iparnak {
     font-family: 'IBM Plex Serif', serif;
 }
 
-#termekek-fiataloknak{
+#termekek-fiataloknak {
     font-family: 'Schoolbell', cursive;
 }
 
@@ -298,7 +315,7 @@ hr {
     transform: rotateY(0deg);
 }
 
-#doboz{
+#doboz {
     display: none;
     position: fixed;
     flex-direction: column-reverse;
@@ -309,11 +326,11 @@ hr {
     overflow-y: scroll;
     padding: 1rem;
     scroll-padding: 10px;
-    bottom: 1rem;  
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 1.5;
     justify-items: center;
     border-radius: 10px;
