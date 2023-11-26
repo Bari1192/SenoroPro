@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&family=Schoolbell&display=swap');
 /*<!-- Márk része --> */
 
 
@@ -7,35 +7,17 @@
 
 
 /*Abel része*/
-.TP-primary {
-    color: var(--main-color);
+
+#termekek-iparnak{
+    font-family: 'IBM Plex Serif', serif;
 }
 
-.TP-btn-primary {
-    background-color: var(--main-color);
-    border-color: var(--main-color);
-}
-
-.TP-btn-primary:hover {
-    background-color: rgb(150 0 0);
-    border-color: rgb(150 0 0);
-    margin-left: 20px;
-}
-
-.TP-btn-primary:active {
-    background-color: rgb(100 0 0);
-    border-color: rgb(100 0 0);
-    margin-left: 20px;
-}
-
-.TP-btn-primary:focus {
-    background-color: rgb(150 0 0);
-    border-color: rgb(150 0 0);
-    margin-left: 20px;
+#termekek-fiataloknak{
+    font-family: 'Schoolbell', cursive;
 }
 
 .TP-body {
-    background-image: url("../Kepek/TPbg2.jpg");
+    background-image: url("../Kepek/laptop-kepek/TPbg2.jpg");
     background-size: cover;
 }
 
@@ -50,23 +32,19 @@
     color: black;
 }
 
-.navbar-brand {
+#navos {
     background-color: var(--main-color);
-    color: rgb(255 255 255);
 }
 
-.navbar-brand:hover {
+#navos {
     background-color: var(--main-color);
-    color: rgb(255 255 255);
 }
 
-.navbar-brand:visited {
+#navos {
     background-color: var(--main-color);
-    color: rgb(255 255 255);
 }
 
-.navbar {
-    background-image: linear-gradient(to bottom left, var(--main-color), rgb(255 255 255));
+#navos {
     background-color: white;
 }
 
@@ -97,4 +75,27 @@
 
 .card-flip:hover .card-back {
     transform: rotateY(0deg);
+}
+
+#doboz{
+    display: none;
+    position: fixed;
+    flex-direction: column-reverse;
+    width: 50%;
+    height: 5rem;
+    background-color: black;
+    color: white;
+    overflow-y: scroll;
+    padding: 1rem;
+    scroll-padding: 10px;
+    bottom: 1rem;  
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    line-height: 1.5;
+    justify-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
 }
