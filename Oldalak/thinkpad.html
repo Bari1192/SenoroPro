@@ -12,242 +12,244 @@
 
 <body class="bg-secondary TP-body">
 
-  <header></header>
-
-  <!--navigáció-->
-  <nav id="navos" class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand " href="../index.html">
-        <img src="../Kepek/Fooldal/navbar/Logo.png" alt="" style="width: 75px; height: 75px;" title="">
-        Senoro Pro
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a></li>
-          <li class="nav-item text-nowrap"><a class="nav-link" href="#">Asztali gépek</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Telefonok</a></li>
-          <li class="nav-item dropdown dark-dropdown" data-bs-theme="navbar-dark">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuDark" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">Laptopok</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="thinkpad.html">Thinkpadek</a></li>
-              <li><a class="dropdown-item" href="#">Ideapadok</a></li>
-            </ul>
-          </li>
-          <li class="nav-item text-nowrap"><a class="nav-link" href="#">MI-Otthon</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!--Cím-->
-  <section id="cimsor">
-    <div class="container w-75 bg-white text-dark p-3 mb-1 h-100">
-      <div class="row">
-        <div class="col-10">
-          <h1>Hordozható számítógépek mindenkinek<span style="color:red">.</span></h1>
-        </div>
-        <div class="col-2">
-          <button onclick="temavaltas(this)" class="btn btn-dark w-100 p-1"><span
-              class="text-center">&#9728;</span></button>
-        </div>
-      </div>
-      <div class="row">
-        <ul class="text-center">
-          <li class="d-inline px-3"><a class="menuk btn btn-white" href="#">Kezdés</a></li>
-          <li class="d-inline px-3"><a class="menuk btn btn-white" href="#bemutato">Bemutató 1</a></li>
-          <li class="d-inline px-3"><a class="menuk btn btn-white" href="#termekek">Cégeknek</a></li>
-          <li class="d-inline px-3"><a class="menuk btn btn-white" href="#bemutato2">Bemutató 2</a></li>
-          <li class="d-inline px-3"><a class="menuk btn btn-white" href="#termekek2">Fiataloknak</a></li>
-          <li class="d-inline px-3"><a class="menuk btn btn-white" href="#labas">Információk</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!--Átvezetőkép 1.-->
-  <section class="h-100">
-    <img src="../Kepek/laptop-kepek/thinkpad-light-theme-1.jpeg" alt="vilagos laptop 1"
-      class="atvezeto mx-auto d-block w-75">
-  </section>
-
-  <!--Legfelső slideshow-->
-  <section id="bemutato">
-    <div class="container w-75 bg-white text-dark p-3 mb-1 h-100">
-      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="../Kepek/laptop-kepek/thinkpad-1-1(k).jpg" class="d-block w-100 img-fluid"
-              alt="bemutato-thinkpad-1-1">
-            <!-- <video class="ratio ratio-4x3" muted loop autoplay src="https://p3-ofp.static.pub/ShareResource/thinkpad/Videos/lenovo-laptop-thinkpad-series-feature-1-360-hinge-video-v2.mp4"></video> -->
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="../Kepek/laptop-kepek/thinkpad-2-1.jpg" class="d-block w-100 img-fluid"
-              alt="bemutato-thinkpad-2-1">
-            <!-- <video class="ratio ratio-4x3" muted autoplay src=""></video> -->
-          </div>
-          <div class="carousel-item">
-            <img src="../Kepek/laptop-kepek/thinkpad-3-1(k).jpg" class="d-block w-100 img-fluid"
-              alt="bemutato-thinkpad-3-1">
-            <!-- <video class="ratio ratio-4x3" loop muted autoplay src="https://static.lenovo.com/ww/campaigns/2020/think-brand/lenovo-laptop-thinkpad-series-feature-3-foldable-video-v2.mp4"></video> -->
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+  <header>
+    <!--navigáció-->
+    <nav id="navos" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand " href="../index.html">
+          <img src="../Kepek/Fooldal/navbar/Logo.png" alt="" style="width: 75px; height: 75px;" title="">
+          Senoro Pro
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!--Átvezetőkép 2.-->
-  <section class="h-100 d-flex align-content-center">
-    <img src="../Kepek/laptop-kepek/thinkpad-light-theme-2.jpeg" alt="vilagos laptop 2"
-      class="atvezeto mx-auto d-block w-75">
-  </section>
-
-  <!--LAPTOPOK-->
-  <section id="termekek">
-    <div class="container w-75 bg-white text-dark p-3 mb-1 h-100">
-      <h2 id="termekek-iparnak" class="text-center my-2">Önnek ajánljuk!</h2>
-      <!--Laptop M110-->
-      <div class="row">
-        <div class="col-sm-6 col-md-4 border-dark">
-          <p class="text-center font-monospace m-0">Laptop M110</p>
-          <div class="card card-flip" title="M110" data-bs-toggle="tooltip" data-bs-placement="top">
-            <div class="card-front">
-              <div class="card-body">
-                <img class="img-fluid rounded" src="../Kepek/laptop-kepek/thinkpad-server-1.jpeg" alt="Laptop M110">
-              </div>
-            </div>
-            <div class="card-back">
-              <div class="card-body">
-                <h2 class="card-title text-center">Laptop M110</h2>
-                <p class="card-text text-justify">
-                  A Laptop M110 a legjobb prémium laptop közé tartozik. Ez a laptop a legmagasabb teljesítményt és
-                  minőséget nyújtja A laptop képes megbirkózni a hardverigényesebb feladatokkal is, mint a
-                  videószerkesztés,
-                  3D modellezés, játék vagy a mesterséges intelligencia.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a class="m-1 mx-auto d-block btn btn-primary" title="LM110" data-bs-placement="top" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#LM110" aria-controls="LM110">Részletek</a>
-        </div>
-
-        <!--Laptop D541-->
-        <div class="col-sm-6 col-md-4 border-dark">
-          <p class="text-center font-monospace m-0">Laptop D541</p>
-          <div class="card card-flip" title="D541" data-bs-toggle="tooltip" data-bs-placement="top">
-            <div class="card-front">
-              <div class="card-body">
-                <img class="img-fluid rounded" src="../Kepek/laptop-kepek/thinkpad-server-2.jpeg" alt="Laptop D541">
-              </div>
-            </div>
-            <div class="card-back">
-              <div class="card-body">
-                <h2 class="card-title text-center">Laptop D541</h2>
-                <p class="card-text text-justify">
-                  A Laptop D541 a legjobb középkategóriás laptop kategóriába tartozik1. Ez a laptop jó ár/érték arányt
-                  képvisel, és megfelelő teljesítményt nyújt átlagos felhasználásra, mint például internetezés, irodai
-                  munka, videónézés vagy egyszerűbb játékok.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a class="m-1 mx-auto d-block btn btn-primary" title="D541" data-bs-placement="top" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#LD541" aria-controls="LD541">Részletek</a>
-        </div>
-
-        <!--Laptop K43-->
-        <div class="col-sm-6 col-md-4 border-dark">
-          <p class="text-center font-monospace m-0">Laptop K43</p>
-          <div class="card card-flip" title="K43" data-bs-toggle="tooltip" data-bs-placement="top">
-            <div class="card-front">
-              <div class="card-body">
-                <img class="img-fluid rounded" src="../Kepek/laptop-kepek/thinkpad-server-3.jpeg" alt="Laptop K43">
-              </div>
-            </div>
-            <div class="card-back">
-              <div class="card-body">
-                <h2 class="card-title text-center">Laptop K43</h2>
-                <p class="card-text text-justify">A K43 egy megbízható laptop, ultrabook kategóriában. A Laptop K43 jó
-                  teljesítményt, tartósságot, hordozhatóságot és innovatív funkciókat nyújt. A modell az egyik legjobb
-                  modell, amely kedvező áron beszerezhető és ideális a mindennapi feladatok elvégzésére.</p>
-              </div>
-            </div>
-          </div>
-          <a class="m-1 mx-auto d-block btn btn-primary" title="K43" data-bs-placement="top" type="button"
-            data-bs-toggle="offcanvas" data-bs-target="#LK43" aria-controls="LK43">Részletek</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Főoldal</a></li>
+            <li class="nav-item text-nowrap"><a class="nav-link" href="#">Asztali gépek</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Telefonok</a></li>
+            <li class="nav-item dropdown dark-dropdown" data-bs-theme="navbar-dark">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuDark" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">Laptopok</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="thinkpad.html">Thinkpadek</a></li>
+                <li><a class="dropdown-item" href="#">Ideapadok</a></li>
+              </ul>
+            </li>
+            <li class="nav-item text-nowrap"><a class="nav-link" href="#">MI-Otthon</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
+  </header>>
 
-  <!--Átvezetőkép 3.-->
-  <section class="h-100 d-flex align-content-center">
-    <img src="../Kepek/laptop-kepek/thinkpad-light-theme-3.jpeg" alt="vialgos laptop 3"
-      class="atvezeto mx-auto d-block w-75">
-  </section>
-
-  <!--Fiataloknak rész-->
-  <section id="termekek2">
-    <div class="container w-75 bg-white text-dark p-3 mb-1 h-100">
-      <h2 class="text-center" id="termekek-fiataloknak">Modellek neked!</h2>
-      <p>Dolgozz és tanulj bárhonnan! Vidd bárhova, legyen az könyvtár, iskola, kávézó. Élvezd az új modelleink által
-        biztosított mobilitásadta szabadságot!</p>
-      <p>Tanulj otthon, tanulj közösségben, számítógépeink fel vannak készítve! Zsákold be a digitális oktatást!</p>
-      <p>Mozi, hifi egy gépben. Hallgass zenét, nézd kedvenc sorozataidat. Nagyfelbontású kijelző, több hangszóró,
-        mikrofon és webkamera. Lépj szintet és hajsd meg kedvenc játékaidat legújabb gépeinkkel!</p>
-    </div>
-  </section>
-
-  <!--Fiatalos slideshow-->
-  <section id="bemutato2">
-    <div class="container w-75 bg-white text-dark p-3 mb-1 h-100">
-      <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-            <img src="../Kepek/laptop-kepek/thinkpad-1-2.jpg" class="d-block w-100 img-fluid"
-              alt="bemutato-thinkpad-1-2">
+  <main class="container w-75 p-0" id="foelem">
+    <!--Cím-->
+    <section id="cimsor">
+      <div class="container bg-white text-dark p-3 mb-1 h-100">
+        <div class="row">
+          <div class="col-10">
+            <h1>Hordozható számítógépek mindenkinek<span style="color:red">.</span></h1>
           </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="../Kepek/laptop-kepek/thinkpad-2-2(k).jpg" class="d-block w-100 img-fluid"
-              alt="bemutato-thinkpad-2-2">
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="../Kepek/laptop-kepek/thinkpad-3-2.jpg" class="d-block w-100 img-fluid"
-              alt="bemutato-thinkpad-3-2">
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-            <img src="../Kepek/laptop-kepek/thinkpad-4-2.jpg" class="d-block w-100 img-fluid"
-              alt="bemutato-thinkpad-4-2">
+          <div class="col-2">
+            <button onclick="temavaltas(this)" class="btn btn-dark w-100 p-1"><span
+                class="text-center">&#9728;</span></button>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="row">
+          <ul class="text-center">
+            <li class="d-inline px-3"><a class="menuk btn btn-white" href="#">Kezdés</a></li>
+            <li class="d-inline px-3"><a class="menuk btn btn-white" href="#bemutato">Bemutató 1</a></li>
+            <li class="d-inline px-3"><a class="menuk btn btn-white" href="#termekek">Cégeknek</a></li>
+            <li class="d-inline px-3"><a class="menuk btn btn-white" href="#bemutato2">Bemutató 2</a></li>
+            <li class="d-inline px-3"><a class="menuk btn btn-white" href="#termekek2">Fiataloknak</a></li>
+            <li class="d-inline px-3"><a class="menuk btn btn-white" href="#labas">Információk</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!--Átvezetőkép 1.-->
+    <section>
+      <img src="../Kepek/laptop-kepek/thinkpad-light-theme-1.jpeg" alt="vilagos laptop 1"
+        class="atvezeto mx-auto d-block img-fluid w-100">
+    </section>
+
+    <!--Legfelső slideshow-->
+    <section id="bemutato">
+      <div class="container bg-white text-dark p-3 mb-1 h-100">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="../Kepek/laptop-kepek/thinkpad-1-1(k).jpg" class="d-block w-100 img-fluid"
+                alt="bemutato-thinkpad-1-1">
+              <!-- <video class="ratio ratio-4x3" muted loop autoplay src="https://p3-ofp.static.pub/ShareResource/thinkpad/Videos/lenovo-laptop-thinkpad-series-feature-1-360-hinge-video-v2.mp4"></video> -->
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="../Kepek/laptop-kepek/thinkpad-2-1.jpg" class="d-block w-100 img-fluid"
+                alt="bemutato-thinkpad-2-1">
+              <!-- <video class="ratio ratio-4x3" muted autoplay src=""></video> -->
+            </div>
+            <div class="carousel-item">
+              <img src="../Kepek/laptop-kepek/thinkpad-3-1(k).jpg" class="d-block w-100 img-fluid"
+                alt="bemutato-thinkpad-3-1">
+              <!-- <video class="ratio ratio-4x3" loop muted autoplay src="https://static.lenovo.com/ww/campaigns/2020/think-brand/lenovo-laptop-thinkpad-series-feature-3-foldable-video-v2.mp4"></video> -->
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Átvezetőkép 2.-->
+    <section class="d-flex align-content-center">
+      <img src="../Kepek/laptop-kepek/thinkpad-light-theme-2.jpeg" alt="vilagos laptop 2"
+        class="atvezeto mx-auto d-block img-fluid w-100">
+    </section>
+
+    <!--LAPTOPOK-->
+    <section id="termekek">
+      <div class="container bg-white text-dark p-3 mb-1 h-100">
+        <h2 id="termekek-iparnak" class="text-center my-2">Önnek ajánljuk!</h2>
+        <!--Laptop M110-->
+        <div class="row">
+          <div class="col-sm-6 col-md-4 border-dark">
+            <p class="text-center font-monospace m-0">Laptop M110</p>
+            <div class="card card-flip" title="M110" data-bs-toggle="tooltip" data-bs-placement="top">
+              <div class="card-front">
+                <div class="card-body">
+                  <img class="img-fluid rounded" src="../Kepek/laptop-kepek/thinkpad-server-1.jpeg" alt="Laptop M110">
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card-body">
+                  <h2 class="card-title text-center">Laptop M110</h2>
+                  <p class="card-text text-justify">
+                    A Laptop M110 a legjobb prémium laptop közé tartozik. Ez a laptop a legmagasabb teljesítményt és
+                    minőséget nyújtja A laptop képes megbirkózni a hardverigényesebb feladatokkal is, mint a
+                    videószerkesztés,
+                    3D modellezés, játék vagy a mesterséges intelligencia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a class="m-1 mx-auto d-block btn btn-primary" title="LM110" data-bs-placement="top" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#LM110" aria-controls="LM110">Részletek</a>
+          </div>
+
+          <!--Laptop D541-->
+          <div class="col-sm-6 col-md-4 border-dark">
+            <p class="text-center font-monospace m-0">Laptop D541</p>
+            <div class="card card-flip" title="D541" data-bs-toggle="tooltip" data-bs-placement="top">
+              <div class="card-front">
+                <div class="card-body">
+                  <img class="img-fluid rounded" src="../Kepek/laptop-kepek/thinkpad-server-2.jpeg" alt="Laptop D541">
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card-body">
+                  <h2 class="card-title text-center">Laptop D541</h2>
+                  <p class="card-text text-justify">
+                    A Laptop D541 a legjobb középkategóriás laptop kategóriába tartozik1. Ez a laptop jó ár/érték arányt
+                    képvisel, és megfelelő teljesítményt nyújt átlagos felhasználásra, mint például internetezés, irodai
+                    munka, videónézés vagy egyszerűbb játékok.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a class="m-1 mx-auto d-block btn btn-primary" title="D541" data-bs-placement="top" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#LD541" aria-controls="LD541">Részletek</a>
+          </div>
+
+          <!--Laptop K43-->
+          <div class="col-sm-6 col-md-4 border-dark">
+            <p class="text-center font-monospace m-0">Laptop K43</p>
+            <div class="card card-flip" title="K43" data-bs-toggle="tooltip" data-bs-placement="top">
+              <div class="card-front">
+                <div class="card-body">
+                  <img class="img-fluid rounded" src="../Kepek/laptop-kepek/thinkpad-server-3.jpeg" alt="Laptop K43">
+                </div>
+              </div>
+              <div class="card-back">
+                <div class="card-body">
+                  <h2 class="card-title text-center">Laptop K43</h2>
+                  <p class="card-text text-justify">A K43 egy megbízható laptop, ultrabook kategóriában. A Laptop K43 jó
+                    teljesítményt, tartósságot, hordozhatóságot és innovatív funkciókat nyújt. A modell az egyik legjobb
+                    modell, amely kedvező áron beszerezhető és ideális a mindennapi feladatok elvégzésére.</p>
+                </div>
+              </div>
+            </div>
+            <a class="m-1 mx-auto d-block btn btn-primary" title="K43" data-bs-placement="top" type="button"
+              data-bs-toggle="offcanvas" data-bs-target="#LK43" aria-controls="LK43">Részletek</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Átvezetőkép 3.-->
+    <section class="h-100 d-flex align-content-center">
+      <img src="../Kepek/laptop-kepek/thinkpad-light-theme-3.jpeg" alt="vialgos laptop 3"
+        class="atvezeto mx-auto d-block img-fluid w-100">
+    </section>
+
+    <!--Fiataloknak rész-->
+    <section id="termekek2">
+      <div class="container bg-white text-dark p-3 mb-1 h-100">
+        <h2 class="text-center" id="termekek-fiataloknak">Modellek neked!</h2>
+        <p>Dolgozz és tanulj bárhonnan! Vidd bárhova, legyen az könyvtár, iskola, kávézó. Élvezd az új modelleink által
+          biztosított mobilitásadta szabadságot!</p>
+        <p>Tanulj otthon, tanulj közösségben, számítógépeink fel vannak készítve! Zsákold be a digitális oktatást!</p>
+        <p>Mozi, hifi egy gépben. Hallgass zenét, nézd kedvenc sorozataidat. Nagyfelbontású kijelző, több hangszóró,
+          mikrofon és webkamera. Lépj szintet és hajsd meg kedvenc játékaidat legújabb gépeinkkel!</p>
+      </div>
+    </section>
+
+    <!--Fiatalos slideshow-->
+    <section id="bemutato2">
+      <div class="container bg-white text-dark p-3 mb-1 h-100">
+        <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img src="../Kepek/laptop-kepek/thinkpad-1-2.jpg" class="d-block w-100 img-fluid"
+                alt="bemutato-thinkpad-1-2">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="../Kepek/laptop-kepek/thinkpad-2-2(k).jpg" class="d-block w-100 img-fluid"
+                alt="bemutato-thinkpad-2-2">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="../Kepek/laptop-kepek/thinkpad-3-2.jpg" class="d-block w-100 img-fluid"
+                alt="bemutato-thinkpad-3-2">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img src="../Kepek/laptop-kepek/thinkpad-4-2.jpg" class="d-block w-100 img-fluid"
+                alt="bemutato-thinkpad-4-2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer id="labas" class="container-fluid bg-white text-dark p-1">
     <!-- cégről blokk konténer -->
