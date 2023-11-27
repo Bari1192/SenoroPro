@@ -1,3 +1,6 @@
+/*fontok ne töröld ki!*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&family=Schoolbell&display=swap');
+
 /*<!-- Márk része --> */
 
 /* Media Querik 270 PIXELIG */
@@ -118,7 +121,7 @@ p {
 }
 
 h1 {
-    color: white;
+    /*color: white;*/
     text-transform: uppercase;
     font-weight: bold;
 }
