@@ -84,3 +84,20 @@ document.addEventListener('keydown', function (event) {
         console.log(window.navigator.userAgent.toString())
     }
 });
+
+function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+
+    var kari = new Date("2023-12-23");
+    var x = kari-date;
+
+    var time = h + ":" + m + ":" + s;
+    document.getElementById("szamlalo").innerText = "Már csak: " + Math.floor(Math.floor(x / 1000) / 60 / 60 / 24) + " nap és akció.";
+    
+    setTimeout(showTime, 1000);
+    
+}
+showTime();

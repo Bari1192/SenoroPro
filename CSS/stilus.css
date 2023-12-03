@@ -376,3 +376,9 @@ hr {
     justify-content: center;
     text-align: center;
 }
+#szamlalo{
+    background-color: #d71e23;
+    text-align: center;
+    color: white;
+    padding: .2rem;
+}
