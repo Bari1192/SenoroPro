@@ -275,7 +275,46 @@ hr {
 }
 
 
-/* display: inline-block */
+/*  KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS  */
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.plan {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    margin: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.plan h3 {
+    margin-bottom: 10px;
+}
+
+.plan a {
+    background-color: #0096ff;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.plan a:hover {
+    background-color: #0067c2;
+}
+
+.premium {
+    background-image: linear-gradient(135deg, rgb(180, 22, 86), rgba(255, 166, 0, 0.603));
+}
 
 
 /*Abel része*/
