@@ -93,9 +93,15 @@ function showTime(){
 
     var kari = new Date("2023-12-23");
     var x = kari-date;
-
+    let nap = Math.floor(Math.floor(x / 1000) / 60 / 60 / 24);
+    if (nap < 1){
+        nap = "Az akció már elkezdődött!"
+    }
+    else{
+        nap = "Már csak " + nap + " nap és akció."
+    }
     var time = h + ":" + m + ":" + s;
-    document.getElementById("szamlalo").innerText = "Már csak: " + Math.floor(Math.floor(x / 1000) / 60 / 60 / 24) + " nap és akció.";
+    document.getElementById("szamlalo").innerText = nap;
     
     setTimeout(showTime, 1000);
     
