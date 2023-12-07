@@ -168,7 +168,7 @@ h3 {
 }
 
 .btn-primary:active {
-    background-color: rgb(255, 204, 63);
+    background-color: rgb(255, 204, 55);
     border-color: rgb(255, 204, 63);
     color: black
 }
@@ -209,6 +209,10 @@ h3 {
     font-weight: 700;
     text-align: center;
     margin-bottom: 0.5rem;
+}
+.card-text{
+    font-weight:600;
+
 }
 
 /* Banner design-ja */
