@@ -421,3 +421,7 @@ hr {
     color: white;
     padding: .2rem;
 }
+.rejtve{
+    display: none;
+    font-size: 0;
+}
