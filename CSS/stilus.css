@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&family=Schoolbell&display=swap');
 
 /*<!-- Márk része --> */
-
+button
 /* Media Querik 270 PIXELIG */
 @media(max-width: 270px) {
     #kartya_novekves .row.my-2 .col-6 {
@@ -280,6 +280,19 @@ hr {
 
 
 /*  KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS  */
+.xkep{
+    position: absolute;
+    margin-left: 10px;
+}
+.xk1{
+    top: 75%;
+}
+.xk2{
+    top: 50%;
+}
+.xk3{
+    top: 25%;
+}
 
 .pricing-table {
     display: flex;
