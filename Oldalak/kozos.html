@@ -27,8 +27,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="#">Főoldal</a></li>
-                        <li class="nav-item text-nowrap"><a class="nav-link disabled" href="#">Asztali gépek</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Főoldal</a></li>
+                        <li class="nav-item text-nowrap"><a class="nav-link disabled" href="./thinkpad.html">Asztali gépek</a></li>
                         <li class="nav-item"><a class="nav-link disabled" href="#">Telefonok</a></li>
                         <li class="nav-item dropdown dark-dropdown" data-bs-theme="navbar-dark">
                             <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuDark" role="button"
@@ -42,11 +42,11 @@
                         <li class="nav-item text-nowrap"><a class="nav-link active" href="#">MI-Otthon</a></li>
 
                     </ul>
-                    <form class="d-flex">
+                    <div class="d-flex">
                         <input class="form-control me-3 search-input ms-lg-2 ms-0" type="search" placeholder="Keresés"
                             aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Keresés</button>
-                    </form>
+                        <button onclick="kereses()" class="btn btn-outline-light" type="submit">Keresés</button>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -64,39 +64,60 @@
             </div>
         </div>
         <div class="container bg-white p-3 my-3 rounded">
-            <h1>Miért `mi?</h1>
-            <ol class="rounded bg-dark text-white py-1">
-                <li>Mert 0-24 rendelkezlsre állunk</li>
-                <li>Mert nekünk első ügyfeleink adatainak biztonsága</li>
-                <li>Mert a legkedvezőbb ajánlatokkal várunk</li>
-                <li>Mert a jövő a mesterséges intelligenciával kezdődik.</li>
-                <li>Otthoni vagy, nincs szerver? <a href="../index.html#erted">Nézd meg gépeinket</a>!</li>
-            </ol>
+            <div class="row">
+                <div class="col-12">
+                    <h1>Miért `mi?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ol class="rounded bg-dark text-white py-1">
+                        <li>Mert 0-24 rendelkezlsre állunk</li>
+                        <li>Mert nekünk első ügyfeleink adatainak biztonsága</li>
+                        <li>Mert a legkedvezőbb ajánlatokkal várunk</li>
+                        <li>Mert a jövő a mesterséges intelligenciával kezdődik.</li>
+                        <li>Otthoni vagy, nincs szerver? <a href="../index.html#erted">Nézd meg gépeinket</a>!</li>
+                    </ol>
+                </div>
+            </div>
         </div>
         <div class="pricing-table">
             <div class="plan">
                 <h3>Alap tervezés</h3>
                 <h2>$69</h2>
-                <p>Choose the one on the right or me bby </p>
-                <p>We need monnneeeeeeyy</p>
-                <p>And more...</p>
+                <p>Tervrajz készítés otthonához</p>
+                <p>Termékajánlás</p>
+                <p>Egyedi megoldások...</p>
                 <a href="#">Ezt választom!</a>
             </div>
             <div class="plan premium">
                 <h3>Standard tervezés</h3>
                 <h2>$79</h2>
-                <p>Some great feature - like me</p>
-                <p>Another super feature like my body</p>
-                <p>And something more u know...</p>
+                <p>Tervrajz készítés felméréssel</p>
+                <p>Termékek részletes bemutatása</p>
+                <p>Az előző szint tartalmai...</p>
                 <a href="#">Ezt választom!</a>
             </div>
             <div class="plan">
                 <h3>Prémium tervezés és kivitelezés</h3>
                 <h2>$89</h2>
-                <p>Some great feature</p>
-                <p>Another super feature</p>
-                <p>And more...</p>
+                <p>Tervrajzok kivitelezése csapattal</p>
+                <p>Beépítés és karbantartás</p>
+                <p>Az előző szint tartalmai...</p>
                 <a href="#">Ezt választom!</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Otthon az informatikában</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+
+                </div>
             </div>
         </div>
     </main>
@@ -174,5 +195,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
+    <script src="../JS/script.js"></script>
 </body>
 </html>

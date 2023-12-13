@@ -1,8 +1,8 @@
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 let block = false;
-let x = document.getElementById("doboz");
 function print(text) {
+    let x = document.getElementById("doboz");
     (function checkFlag() {
         if (block) {
             window.setTimeout(checkFlag, 150);
@@ -27,7 +27,7 @@ function print(text) {
         }
     })();
 }
-function temavaltas(x) {
+function temavaltas(x_elem) {
     let elemek = document.getElementsByClassName("atvezeto");
     if (elemek[0].src.includes('light')) {
         document.getElementsByClassName('dropdown-menu')[0].classList.add('dropdown-menu-dark');
@@ -48,8 +48,8 @@ function temavaltas(x) {
             elemek[i].classList.add('btn-dark');
             elemek[i].classList.remove('btn-light');
         }
-        x.classList.add('btn-light');
-        x.classList.remove('btn-dark');
+        x_elem.classList.add('btn-light');
+        x_elem.classList.remove('btn-dark');
     }
     else {
         if (elemek[0].src.includes('dark')) {
@@ -71,15 +71,16 @@ function temavaltas(x) {
                     elemek[i].classList.add('bg-white', 'text-dark');
                 }
             });
-            x.classList.remove('btn-light');
-            x.classList.add('btn-dark');
+            x_elem.classList.remove('btn-light');
+            x_elem.classList.add('btn-dark');
         }
     }
 }
 document.addEventListener('keydown', function (event) {
     if (event.ctrlKey && event.altKey && event.key === 'g') {
-        x.style.display = "flex";
-        x.innerHTML = ""; /*általános felhasználhatóság miatt itt törlök*/
+        document.body.innerHTML += '<div id="doboz"></div><a id="zene" href="https://youtu.be/8GliyDgAGQI?si=IebGQnzYdlFM2oXZ&t=45" target="_blank"></a>';
+        document.getElementById("doboz").style.display = "flex";
+        document.getElementById("doboz").innerHTML = ""; /*általános felhasználhatóság miatt itt törlök*/
         print('Hey Sziri! Aleksza játssz le rap zenét!');
         console.log(window.navigator.userAgent.toString())
     }
@@ -87,9 +88,9 @@ document.addEventListener('keydown', function (event) {
 
 function showTime(){
     var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
+    // var h = date.getHours(); // 0 - 23
+    // var m = date.getMinutes(); // 0 - 59
+    // var s = date.getSeconds(); // 0 - 59
 
     var kari = new Date("2023-12-23");
     var x = kari-date;
@@ -100,10 +101,29 @@ function showTime(){
     else{
         nap = "Már csak " + nap + " nap és akció."
     }
-    var time = h + ":" + m + ":" + s;
+    // var time = h + ":" + m + ":" + s;
     document.getElementById("szamlalo").innerText = nap;
     
     setTimeout(showTime, 1000);
     
 }
-showTime();
+if (location.pathname.split('/').slice(-1) == "thinkpad.html"){
+    showTime();
+}
+
+function kereses(){
+    let szoveg = document.getElementsByTagName('input')[0].value.toLowerCase();
+    let esetek = [];
+    let nav_elemek = document.getElementsByClassName('nav-item');
+    for (let i = 0; i < nav_elemek.length; i++){
+        esetek.push(nav_elemek[i].innerText.toLowerCase());
+    }
+    nav_elemek = document.getElementsByClassName('dropdown-item');
+    for (let i = 0; i < nav_elemek.length; i++){
+        esetek.push(nav_elemek[i].innerText.toLowerCase());
+    }
+    if (esetek.includes(szoveg)){
+        alert("megvan")
+    }
+    document.getElementsByTagName('input')[0].value = "";
+}
