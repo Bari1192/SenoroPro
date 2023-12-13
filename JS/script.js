@@ -113,17 +113,22 @@ if (location.pathname.split('/').slice(-1) == "thinkpad.html"){
 
 function kereses(){
     let szoveg = document.getElementsByTagName('input')[0].value.toLowerCase();
-    let esetek = [];
-    let nav_elemek = document.getElementsByClassName('nav-item');
-    for (let i = 0; i < nav_elemek.length; i++){
-        esetek.push(nav_elemek[i].innerText.toLowerCase());
-    }
-    nav_elemek = document.getElementsByClassName('dropdown-item');
-    for (let i = 0; i < nav_elemek.length; i++){
-        esetek.push(nav_elemek[i].innerText.toLowerCase());
-    }
-    if (esetek.includes(szoveg)){
-        alert("megvan")
+    let elemek = [];
+    ['nav-link', 'dropdown-item'].forEach(element => {
+        let d = document.getElementsByClassName(element);
+        for(let i = 0; i < d.length; i++){
+            elemek.push(d[i])
+        }
+    });
+    let i = 0;
+    while (i < elemek.length && elemek[i].textContent.toLowerCase() != szoveg){
+        i++;
     }
     document.getElementsByTagName('input')[0].value = "";
+    if (i < elemek.length) {
+        elemek[i].click();
+    }
+    else{
+        document.getElementsByTagName('input')[0].placeholder = "nem találtam ilyen oldalt.";
+    }
 }
