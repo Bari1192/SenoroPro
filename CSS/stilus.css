@@ -1,14 +1,12 @@
 /*fontok ne töröld ki!*/
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&family=Schoolbel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&family=Schoolbell&display=swap');
 
 /*<!-- Márk része --> */
-button
 /* Media Querik 270 PIXELIG */
 @media(max-width: 270px) {
     #kartya_novekves .row.my-2 .col-6 {
         width: 100%;
         padding: 0;
-
     }
 
     #kartya_novekves .btn {
