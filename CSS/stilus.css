@@ -278,24 +278,26 @@ hr {
 
 
 /*  KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS  */
-.xkep{
-    position: absolute;
-    margin-left: 10px;
-}
-.xk1{
-    top: 75%;
-}
-.xk2{
-    top: 50%;
-}
-.xk3{
-    top: 25%;
-}
+/*  KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS    KÖZÖS  */
+.elsonagycol {
+    background-image: url(../Kepek/kozos/aloldalcsempe.png);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    border-radius: 1rem;
+    border-width: 0.5rem;
+    border-color: white;
+    border-style: solid;
+    }
+
+
+
 
 .pricing-table {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: auto;
     width: 100%;
 }
 
@@ -319,7 +321,7 @@ hr {
     color: white;
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-decoration: none;
 }
 
